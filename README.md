@@ -15,6 +15,7 @@
 
 路由设置：
 
+```python
 from django.contrib import admin
 from django.urls import path, include
 from django.http import HttpResponse
@@ -34,3 +35,4 @@ urlpatterns = [
     path('confirm/', views.user_confirm),
     path('email_ack/', views.email_ack),
 ]
+```
