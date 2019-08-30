@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邮箱验证</title>
+</head>
+<body>
+<h1>邮箱验证</h1>
+<form action="/email_ack/" method="post">
+    {% csrf_token %}
+    <p>
+        <label>用户名: </label>
+        <input type="text" id="id_username" name="username" placeholder="用户名" autofocus required />
+    </p>
+    <input type="submit" value="确定">
+</form>
+</body>
+</html>
